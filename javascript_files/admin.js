@@ -1,8 +1,6 @@
 
 (function ($) {
     "use strict";
-
-
     /*==================================================================
     [ Focus input ]*/
     $('.input100').each(function(){
@@ -15,8 +13,6 @@
             }
         })
     })
-
-
     /*==================================================================
     [ Validate ]*/
     var input = $('.validate-input .input100');
@@ -84,6 +80,16 @@
         }
 
     });
-
-
 })(jQuery);
+function openNav(){
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "#fff";
+  // document.getElementById("mySidenav").style.marginTop ="90px";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+//   document.getElementById("mySidenav").style.marginTop ="250px";
+}
