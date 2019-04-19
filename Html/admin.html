@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="Andela_design.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/admin.css">
     <script src="main.js"></script>
 </head>
 
 <header class="myheader" id="toolbar" >
-  <div class="myTitle" style="font-size:2em;margin-left:30px;margin-top:20px;">Quick Credit</div>  
+  <div class="myTitle" style="font-size:2em;margin-left:30px;margin-top:20px;">Quick Credit</div>
   <div class="search">
         <input type="text" placeholder="... search">
-        </div> 
-    
+        </div>
+
 
 <div class="notify">
 <img src="images/notification.png" alt="" style="height:30px; width:30px; margin-right: 2em;">
@@ -24,13 +24,13 @@
     </div>
 </header>
 <body>
-  
+
     <style>
     body {
       font-family: "Lato", sans-serif;
       transition: background-color .5s;
     }
-    
+
     .sidenav {
       height: 100%;
       width: 0;
@@ -56,13 +56,13 @@
       margin-top:0px;
       height:50px;
       box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 2px 3px 0 rgba(0, 0, 0, 0.05);
-      
+
     }
-    
+
     .sidenav a:hover {
       color:red;
     }
-    
+
     .sidenav .closebtn {
       position: absolute;
       top: 0;
@@ -70,12 +70,12 @@
       font-size: 36px;
       margin-left: 50px;
     }
-    
+
     #main {
       transition: margin-left .5s;
       padding: 16px;
     }
-    
+
     @media screen and (max-height: 450px) {
       .sidenav {padding-top: 15px;}
       .sidenav a {font-size: 18px;}
@@ -83,7 +83,7 @@
     </style>
     </head>
     <body>
-    
+
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="#">About</a>
@@ -91,11 +91,11 @@
       <a href="#">Clients</a>
       <a href="#">Contact</a>
     </div>
-    
+
     <div id="main">
       <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
     </div>
-    
+
     <script>
     function openNav() {
       document.getElementById("mySidenav").style.width = "250px";
@@ -103,7 +103,7 @@
       document.body.style.backgroundColor = "#fff";
       // document.getElementById("mySidenav").style.marginTop ="90px";
     }
-    
+
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
       document.getElementById("main").style.marginLeft= "0";
@@ -111,6 +111,6 @@
     //   document.getElementById("mySidenav").style.marginTop ="250px";
     }
     </script>
-    
+
 </body>
 </html>
