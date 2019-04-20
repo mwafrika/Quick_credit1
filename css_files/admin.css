@@ -1,7 +1,21 @@
+::-webkit-full-screen{
+  width:10px;
+}
+::-webkit-scrollbar-track{
+background:#f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+  background:#888;
+}
+::-webkit-scrollbar-thumb:hover{
+  background:#555;
+  
+}
 .myheader {
-  width: 100%;
-  height: 80px;
-  background-color:whitesmoke;
+  width:100%;
+  height:75px;
+  /* background-color:whitesmoke;  #1ca3ec */
+  background-color:yellowgreen;
   box-shadow:0 0px 8px  rgba(0, 0, 0, 0.2);
   /* float:left; */
    margin-left:0px;
@@ -10,26 +24,64 @@
    }
 .myTitle{
      font-size:2em;margin-left:30px;margin-top:20px;
+     margin-right: 250px;
+     font-family: 'Times New Roman', Times, serif;
+     color: rgb(108, 83, 126);
      }
-.search{
+/* .search{
+  position:absolute;
+  top: 355px;
+  left: 575px;
+} */
+.imgS{
+height: 30px;
+width: 30px;
+position: fixed;
+right:663px;
+top: 30px;
 
 }
+.search input{
+  height: 30px;
+  width: 460px;
+  height:10px;
+  margin-right: 460px;
+  background-position: 12px 17px;
+  background-repeat: no-repeat;
+  padding:20px 20px 14px 14px;
+  border-radius:25px;
+  margin-top: 10px;
+  text-align: center;
+  /* background-image:url("../images/search.png"); */
+
+  /* -webkit-transition:width 0.7s ease-in-out;
+  -moz-transition:width 0.7s ease-in-out;
+  -ms-transition:width 0.7s ease-in-out;
+  -o-transition: width 0.7s ease-in-out;
+  transition: width 0.7s ease-in-out; */
+}
+/* input[type=text]:focus{
+  width:450px;
+} */
 .notify
 {
-  height:50px; 
-  width:50px; 
-  margin-right:1em;
-
+  height:30px; 
+  width:30px; 
+  display: flex;
+  flex-direction:row;
+  
+}
  /* display:flex;
   flex-direction:row;
   float:right;
   margin-top: -2.7em;
   margin-right: 3em; */
-}
+
 #pictures{
-  height:50px; 
-  width:50px; 
+  height:40px; 
+  width:40px; 
   margin-right:1em;
+  margin-top: 10px;
 }
 
 ul{
@@ -53,6 +105,10 @@ font-family: Arial, Helvetica, sans-serif;
 color:#fff;
 background:#f3f3f3;
 
+}
+.img1 .img2 .img3{
+  height: 50px;
+  width: 50px;
 }
 li:hover a {
   background: #19c589;
@@ -95,30 +151,32 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgba(49, 95, 117, 0.836);
+  background-color:#1ca3ec;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
   margin-left: 8px;
-  margin-top: 90px;
+  margin-top:85px;
 }
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size:16px;
+  font-weight:bolder;
   color: #f7f7f7;
   display: block;
   transition: 0.3s;
-  background-color: rgba(53, 52, 56, 0.534);
+  /* background-color:indigo; */
   margin-top:0px;
   height:50px;
   box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 2px 3px 0 rgba(0, 0, 0, 0.05);
-
+text-align: center;
+padding-top: 40px;
 }
 
-.sidenav a:hover {
+/* .sidenav a:hover {
   color:red;
-}
+} */
 
 .sidenav .closebtn {
   position: absolute;
