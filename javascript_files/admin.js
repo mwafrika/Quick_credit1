@@ -86,6 +86,8 @@ function openNav(){
   document.getElementById("main").style.marginLeft = "250px";
   document.body.style.backgroundColor = "#fff";
   // document.getElementById("mySidenav").style.marginTop ="90px";
+  document.getElementById("pictures").style.width ="50px";
+  document.getElementById("pictures").style.height ="50px";
 }
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
