@@ -270,10 +270,14 @@ padding-top: 40px;
   border-radius: 25px;
   border:0 solid transparent;
   color:white;
-  background: #1ca3ec;
+  /* background: #1ca3ec; */
+  background:green;
 }
 .card-footer button.reject{
   background: red;
+}
+.card-footer button.Details{
+  background: #1ca3ec;
 }
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
