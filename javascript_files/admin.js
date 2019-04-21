@@ -1,3 +1,5 @@
+import '../css_files/loan_details.css';
+import '../Html_files/main.css';
 
 // (function ($) {
 //     "use strict";
@@ -97,7 +99,21 @@ document.querySelector('.open-nav').addEventListener('click', function(e){
         closeNav();
     }
 });
-
+// function openDialog(){
+//   window.open('loan_details.html','my window','height:300px;width:300px;top:400px;left:400px;');
+// }
+// window.onclick = function(event) {
+//   if (event.target == main) {
+//       modal.style.display = "none";
+//   }
+// }
+// document.querySelector('.Details').addEventListener('click',function(){
+// // var details = document.getElementById("main");
+// // alert(details);
+// window.onclick.querySelector('Details').addEventListener('click',function(e){
+// var details = document.getElementById("main");
+//  e.target=details;
+// });
 
 
 function openNav(){
@@ -113,4 +129,8 @@ function closeNav() {
   document.getElementById("main").style.marginLeft= "0";
   document.body.style.backgroundColor = "white";
 //   document.getElementById("mySidenav").style.marginTop ="250px";
+}
+
+function call_details(){
+  var detail = document.getElementById("myMain");
 }
