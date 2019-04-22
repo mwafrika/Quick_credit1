@@ -1,5 +1,6 @@
 import '../css_files/loan_details.css';
 import '../Html_files/main.css';
+import '../css_files/admin.css';
 
 // (function ($) {
 //     "use strict";
@@ -86,7 +87,7 @@ import '../Html_files/main.css';
 // })(jQuery);
 
 // 
-document.querySelector('.open-nav').addEventListener('click', function(e){
+document.querySelector('.open-nav').addEventListener('click',function(e){
     var sidebar = document.querySelector('#mySidenav');
     if(sidebar.getAttribute('data-state') === 'closed'){
         sidebar.setAttribute('data-state','opened');
@@ -99,23 +100,6 @@ document.querySelector('.open-nav').addEventListener('click', function(e){
         closeNav();
     }
 });
-// function openDialog(){
-//   window.open('loan_details.html','my window','height:300px;width:300px;top:400px;left:400px;');
-// }
-// window.onclick = function(event) {
-//   if (event.target == main) {
-//       modal.style.display = "none";
-//   }
-// }
-// document.querySelector('.Details').addEventListener('click',function(){
-// // var details = document.getElementById("main");
-// // alert(details);
-// window.onclick.querySelector('Details').addEventListener('click',function(e){
-// var details = document.getElementById("main");
-//  e.target=details;
-// });
-
-
 function openNav(){
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
