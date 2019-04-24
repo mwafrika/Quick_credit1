@@ -14,6 +14,7 @@ document.querySelector('.open-nav').addEventListener('click',function(e){
 function openNav(){
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
+  document.getElementsById("avatar_m").style.marginLeft ="250px";
   document.body.style.backgroundColor = "#fff";
   document.getElementById("pictures").style.width ="50px";
   document.getElementById("pictures").style.height ="50px";
@@ -21,5 +22,6 @@ function openNav(){
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginLeft= "0";
+  document.getElementsById("avatar_m").style.marginLeft ="0";
   document.body.style.backgroundColor = "white";
 }
