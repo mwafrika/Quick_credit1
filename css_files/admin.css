@@ -25,7 +25,7 @@ background:#f1f1f1;
   flex-wrap: nowrap;
   justify-content: space-between;
   /* background-color:whitesmoke;  yellowgreen */
-  background-color:#1ca3ec;
+  background-color:#3d8cb6;
   box-shadow:0 0px 8px  rgba(0, 0, 0, 0.5);
    }
   .open-nav{
@@ -165,7 +165,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color:#1ca3ec;
+  background-color:#3d8cb6;
   overflow-x: hidden;
   transition: 0.5s;
   margin-top:77px;
@@ -243,7 +243,6 @@ padding-top: 40px;
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   padding:.8em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
@@ -253,6 +252,7 @@ padding-top: 40px;
   border-radius:50%;
   border:2px solid gray;
   background: #f1f1f1;
+  margin-right: 30px;
 } 
 .card-footer{
   padding: 1em 1em;
@@ -271,13 +271,13 @@ padding-top: 40px;
   border:0 solid transparent;
   color:white;
   /* background: #1ca3ec; */
-  background:green;
+  background:rgba(15, 121, 15, 0.877);
 }
 .card-footer button.reject{
-  background: red;
+  background: rgba(206, 19, 19, 0.897);
 }
 .card-footer button.Details{
-  background: #1ca3ec;
+  background: #3d8cb6;
 }
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
