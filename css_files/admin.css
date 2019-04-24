@@ -283,3 +283,8 @@ padding-top: 40px;
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+#title{
+  display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 30px;}
