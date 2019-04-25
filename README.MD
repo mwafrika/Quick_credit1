@@ -14,3 +14,10 @@ Admin
 # the admin can view all loans
 # he can post Loan transanction
 #he can approve or reject a loan
+
+
+Login Information
+==============================
+#Username to login is not set
+#password to login as admin: admin
+#password to login as client : client
