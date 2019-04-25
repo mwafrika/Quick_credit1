@@ -1,6 +1,6 @@
 body{
-    margin:77px 0 0 0;
-  
+    margin:0 0 0 0;
+    padding:1px;
   }
   
   ::-webkit-full-screen{
@@ -65,7 +65,6 @@ body{
   .search{
     position:relative;
   }
-  
   .imgS{
     position:absolute;
     height:20px;
@@ -174,36 +173,10 @@ body{
   body {
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
+    /* background-image: url("../images/money1.jpg"); */
+
   }
   
-  .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color:#3d8cb6;
-    overflow-x: hidden;
-    transition: 0.5s;
-    margin-top:77px;
-    padding-bottom: 2px bold white;
-  }
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size:16px;
-    font-weight:bolder;
-    color: #f7f7f7;
-    display: block;
-    transition: 0.5s;
-    /* background-color:indigo; */
-    margin-top:0px;
-    height:50px;
-    box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 2px 3px 0 rgba(0, 0, 0, 0.05);
-  text-align: center;
-  padding-top: 40px;
-  }
   .textFields .text1 input{
     text-align: start;
     font-size: 16px;
@@ -230,22 +203,22 @@ box-shadow: 0 0 3px #888;
   .myForm{
     box-shadow:0 1px 2px 0 rgba(0.5, 0.5, 0, 0.5), 0 3px 5px 0 rgba(0.5, 0, 0, 0.5);
     padding: 50px 50px 100px 50px;
-    border-radius: 10px;
+   
   }
   #main2{
-    /* transition:margin-left .5s; */
-    padding: 50px 50px 100px 50px;
+    transition:margin-left .5s;
+    padding:75px 0 0 0;
     display: flex;
     align-content: center;
     justify-content: center;
-    
   }
   .label{
      
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 20px;
     font-family: inherit;
-    margin-left:50px;
+    margin-left: 90px;
+    color:#3d8cb6;
 
   }
   @media screen and (max-height: 450px) {
@@ -276,6 +249,10 @@ box-shadow: 0 0 3px #888;
   .images{
     margin-left:120px;
   }
+  h1{
+    color: white;
+    margin-left: 50px;
+  }
   h3{
   color: white;
   margin-top:10px;
@@ -285,6 +262,6 @@ box-shadow: 0 0 3px #888;
   img{
     height:30px;
     width: 30px;
-    margin-left: 10px;
+    
   }
   
