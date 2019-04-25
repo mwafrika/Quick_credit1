@@ -125,9 +125,9 @@ body{
     position: absolute;
   }
   li{
-  display:block;
-  margin-right:1px;
-  float: left;
+    display:block;
+    margin-right:1px;
+    float: left;
   }
   li a{
     display:block;
