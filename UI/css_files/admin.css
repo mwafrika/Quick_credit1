@@ -59,7 +59,7 @@ img{
   flex-direction:row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  /* background-color:whitesmoke;  yellowgreen */
+ 
   background-color:#3d8cb6;
   box-shadow:0 0px 8px  rgba(0, 0, 0, 0.5);
   z-index:1000;

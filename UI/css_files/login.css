@@ -86,21 +86,12 @@ body{
     margin-top: 22px;
     text-align: center;
     border:0px solid transparent;
-    /* background-image:url("../images/search.png"); */
-    /* -webkit-transition:width 0.7s ease-in-out;
-    -moz-transition:width 0.7s ease-in-out;
-    -ms-transition:width 0.7s ease-in-out;
-    -o-transition: width 0.7s ease-in-out;
-    transition: width 0.7s ease-in-out; */
+    
   }
-  /* input[type=text]:focus{
-    width:450px;
-  } */
+  
   .notify
   {
-    /* height:30px;  */
-    /* width:30px;  */
-    /* flex-grow:3; */
+    
     width: 200px;
     margin-right: 3.5em;
     display: flex;
@@ -112,11 +103,7 @@ body{
       height: 30px;
       width: 30px;
   }
-   /* display:flex;
-    flex-direction:row;
-    float:right;
-    margin-top: -2.7em;
-    margin-right: 3em; */
+   
   
   ul{
     list-style-type: none;
