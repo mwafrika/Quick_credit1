@@ -1,8 +1,8 @@
 #QUICK CREDIT
 ==============
 for this project, we designed a quick credit web application for an online loan lending in order to help those people with lower funding and disabilities of advancing in their respective business, it helps them to increase their business income.
-#we provide loan based on some conditions.
-# before we grant the loan to client he must first set his/her work address and Home where he/she lives.
+- we provide loan based on some conditions.
+- before we grant the loan to client he must first set his/her work address and Home where he/she lives.
 
 #Information to Login
 ======================
@@ -26,11 +26,21 @@ he will need to provide :
 once the admin has logged in the system, he will have first access to:
 - all loan list and specific details.
 - he can then Approve or reject the application loan if the client does not meet the required instruction such as His/her work address     and the home addres.
-Users 
-======
+- to the left hand of the application, we have aside menu composed by :
+1) view and examine loans
+   this pannel include all details about the task and client to be performed by the admin.
+2) View current loans
+ admin can view all current loans that are not fully paid. the admin can choose to reject or approve a loan basing on Tenor limit and installement payment. 
+3) Admin can View all repaid loans : loans that are already paid, fully paid loans.the admin can approve after checking client details.
+4) Admin can mark client as verified: after checking all necessary information of the user after seeing the details.
+5) Admin can post a loan in favour the client,so that the user can be informed about the payment instructions
+
+# Users 
+  ======
 this project covers many  features, amongo them we have :
-# a client is able to request for a loan
-# a client is able to view his history of loan
+- a client is able to request for a loan
+ -a client is able to view his history of loan 
+ 
 
 
 
