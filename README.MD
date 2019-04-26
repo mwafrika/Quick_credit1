@@ -35,11 +35,30 @@ once the admin has logged in the system, he will have first access to:
 4) Admin can mark client as verified: after checking all necessary information of the user after seeing the details.
 5) Admin can post a loan in favour the client,so that the user can be informed about the payment instructions
 
-# Users 
+# Client
   ======
 this project covers many  features, amongo them we have :
-- a client is able to request for a loan
- -a client is able to view his history of loan 
+# a client is able to request for a loan:
+ to request for a loan a user must fill out all necessary information to be granted the loan
+ 1) Loan ID
+ 2) Loan Amount 
+ 3) Loan Tenor 
+ 4) Request Date
+ 5) installement payement
+ 6) loan Amount
+ 7) Work Address
+ 8) Home Address
+ 
+ # client is able to view his history of loan 
+ 
+ 1) Loan ID
+ 2) Loan Amount 
+ 3) Loan Tenor 
+ 4) Request Date
+ 5) installement payement
+ 6) loan Amount
+ 7) interest
+ 8) Date request  
  
 
 
