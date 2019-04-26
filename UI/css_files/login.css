@@ -181,6 +181,11 @@ box-shadow: 0 0 3px #888;
     align-content: center;
     margin-bottom:30px;
   }
+  #btn2{
+    padding: 40px 40px 10px 15px;
+    align-content: center;
+    margin-bottom:1px;
+  }
   .sidenav .closebtn {
     position: absolute;
     top: 0;
