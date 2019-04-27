@@ -60,6 +60,11 @@ this project covers many  features, amongo them we have :
  7) interest
  8) Date request  
  
+# links for the project
+
+github pages: https://mwafrika.github.io/Quick_credit1/UI
+github link : https://github.com/mwafrika/Quick_credit1
+pivotal tracker link: https://www.pivotaltracker.com/n/projects/2328100
 
 
 
