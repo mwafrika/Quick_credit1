@@ -1,15 +1,9 @@
-// /* eslint-disable linebreak-style */
-// const { expect } = require('chai');
-
-
-
-module.exports = {
-
-};
-const server = require('../index');
+/* eslint-disable linebreak-style */
+/* eslint-disable no-undef */
 describe('test', () => {
   it('the test should pass', () => {
     expect('test').to.be.equal('test');
+  // eslint-disable-next-line linebreak-style
   });
 });
 
