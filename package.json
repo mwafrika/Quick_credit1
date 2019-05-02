@@ -1,7 +1,7 @@
 {
   "name": "rotisiv",
   "version": "1.0.0",
-  "description": "",
+  "description": "==============",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -21,16 +21,21 @@
     "eslint-plugin-standard": "^4.0.0",
     "mocha": "^6.1.4"
   },
-   "dependencies": {
-
+  "dependencies": {
     "@hapi/joi": "^15.0.1"
-    
   },
-
   "javascript.validate.enable": false,
- "body-parser":"1.19.0",
-    "express": "^4.16.4"
-  
-  }
-
- 
+  "body-parser": "1.19.0",
+  "express": "^4.16.4",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mwafrika/Quick_credit1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mwafrika/Quick_credit1/issues"
+  },
+  "homepage": "https://github.com/mwafrika/Quick_credit1#readme"
+}
