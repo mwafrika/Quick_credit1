@@ -1,9 +1,9 @@
   
   function checkAdmin(){
-  window.open("../Html_files/admin.html","_self");
+  window.open("../UI/Html_files/admin.html","_self");
 }
 function checkClient(){
- window.open("../Html_files/Client.html","_self");
+ window.open("../UI/Html_files/Client.html","_self");
 }
 
 
