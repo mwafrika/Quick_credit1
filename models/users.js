@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable linebreak-style */
 class users {
-  constructor(id, emails, firstName, lastName, password, Country, status, isAdmin) {
+  constructor(id, firstName, lastName, emails, password, Country, status, isAdmin, address) {
     this.id = id;
     this.firstName = firstName;
     this.lastName = lastName;
@@ -11,6 +11,7 @@ class users {
     this.isAdmin = isAdmin;
     this.password = password;
     this.status = status;
+    this.address = address;
   }
 
 
@@ -78,6 +79,13 @@ class users {
     this.status = status;
   }
 
+  getAddress() {
+    return this.address;
+  }
+
+  setAddress(address) {
+    this.address = address;
+  }
 
   checkpass(password) {
     if (!password === this.password) {
