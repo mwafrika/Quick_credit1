@@ -4,6 +4,7 @@
 for this project, we designed a quick credit web application for an online loan lending in order to help those people with lower funding and disabilities of advancing in their respective business, it helps them to increase their business income.
 - we provide loan based on some conditions.
 - before we grant the loan to client he must first set his/her work address and Home where he/she lives.
+[![Build Status](https://travis-ci.org/mwafrika/Quick_credit1.svg?branch=develop)](https://travis-ci.org/mwafrika/Quick_credit1)
 
 #Information to Login
 ======================
@@ -77,11 +78,5 @@ https://github.com/mwafrika/Quick_credit1
 
 pivotal tracker link:
 https://www.pivotaltracker.com/n/projects/2328100
-
-travis CI
-===========
-[![Build Status](https://travis-ci.org/mwafrika/Quick_credit1.svg?branch=develop)](https://travis-ci.org/mwafrika/Quick_credit1)
-
-
 
 

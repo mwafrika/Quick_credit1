@@ -1,20 +1,44 @@
 {
-  "name": "ui",
+  "name": "rotisiv",
   "version": "1.0.0",
-  "description": "==============\r for this project, we designed a quick credit web application for an online loan lending in order to help those people with lower funding and disabilities of advancing in their respective business, it helps them to increase their business income.\r - we provide loan based on some conditions.\r - before we grant the loan to client he must first set his/her work address and Home where he/she lives.",
+  "description": "==============",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "mocha test/*js --exit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "mocha": "^6.1.4"
+  },
+  "dependencies": {
+    "@hapi/joi": "^15.0.1",
+    "express": "^4.16.4"
+  },
+  "javascript.validate.enable": false,
+  "body-parser": "1.19.0",
+  "express": "^4.16.4",
+  "directories": {
+    "test": "test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mwafrika/Quick_credit1.git"
   },
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/mwafrika/Quick_credit1/issues"
   },
+<<<<<<< HEAD
   "homepage": "https://github.com/mwafrika/Quick_credit1#readme",
   "dependencies": {
     "bcrypt": "^3.0.6",
@@ -23,4 +47,7 @@
   "devDependencies": {
     "lodash": "^4.17.11"
   }
+=======
+  "homepage": "https://github.com/mwafrika/Quick_credit1#readme"
+>>>>>>> e72d072b68c3be9d39751f12a20df6f0c1cd5cca
 }
