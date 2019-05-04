@@ -38,16 +38,7 @@
   "bugs": {
     "url": "https://github.com/mwafrika/Quick_credit1/issues"
   },
-<<<<<<< HEAD
-  "homepage": "https://github.com/mwafrika/Quick_credit1#readme",
-  "dependencies": {
-    "bcrypt": "^3.0.6",
-    "express": "^4.16.4"
-  },
-  "devDependencies": {
-    "lodash": "^4.17.11"
-  }
-=======
+
   "homepage": "https://github.com/mwafrika/Quick_credit1#readme"
->>>>>>> e72d072b68c3be9d39751f12a20df6f0c1cd5cca
+
 }
