@@ -1,59 +1,27 @@
 {
-  "name": "rotisiv",
+  "name": "ui",
   "version": "1.0.0",
   "description": "==============",
-  "main": "../UI/Server/test/test.js",
-  "scripts": {
-    "start": "node index.js",
-    "test": "mocha test/*js --exit"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-    "devDependencies" : {
-
-    "chai": "^4.2.0",
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.17.2",
-    "eslint-plugin-node": "^8.0.1",
-    "eslint-plugin-promise": "^4.1.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "mocha": "^6.1.4"
-  },
-  "dependencies": {
-    "@hapi/joi": "^15.0.1",
-    "express": "^4.16.4"
-  },
-  "javascript.validate.enable": false,
-  "body-parser": "1.19.0",
-  "express": "^4.16.4",
+  "main": "index.js",
   "directories": {
     "test": "test"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mwafrika/Quick_credit1.git"
   },
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/mwafrika/Quick_credit1/issues"
   },
-<<<<<<< HEAD
-  "homepage": "https://github.com/mwafrika/Quick_credit1#readme",
-  "dependencies": {
-
-    "bcrypt":"^3.0.6",
-    "express": "^4.16.4"
-  },
-
-  "devDependencies": 
-  {
-    "lodash": "^4.17.11"
-  }
-=======
-
   "homepage": "https://github.com/mwafrika/Quick_credit1#readme"
-
->>>>>>> c72ead8ffb7c27f9cd984b1e87c40ab50b63dd4d
 }
