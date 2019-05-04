@@ -2,7 +2,7 @@
   "name": "rotisiv",
   "version": "1.0.0",
   "description": "==============",
-  "main": "index.js",
+  "main": "../UI/Server/test/test.js",
   "scripts": {
     "start": "node index.js",
     "test": "mocha test/*js --exit"
@@ -10,7 +10,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+    "devDependencies" : {
+
     "chai": "^4.2.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
@@ -38,16 +39,15 @@
   "bugs": {
     "url": "https://github.com/mwafrika/Quick_credit1/issues"
   },
-<<<<<<< HEAD
   "homepage": "https://github.com/mwafrika/Quick_credit1#readme",
   "dependencies": {
-    "bcrypt": "^3.0.6",
+
+    "bcrypt":"^3.0.6",
     "express": "^4.16.4"
   },
-  "devDependencies": {
+
+  "devDependencies": 
+  {
     "lodash": "^4.17.11"
   }
-=======
-  "homepage": "https://github.com/mwafrika/Quick_credit1#readme"
->>>>>>> e72d072b68c3be9d39751f12a20df6f0c1cd5cca
 }
