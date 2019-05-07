@@ -3,4 +3,5 @@ server2.js
 .eslintcache
 exercisAPI.js
 todo.js
+.nyc_output
 
