@@ -1,3 +1,6 @@
 node_modules
-routes
 server2.js
+.eslintcache
+exercisAPI.js
+todo.js
+
