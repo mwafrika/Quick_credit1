@@ -11,4 +11,5 @@ node_js:
 
   notifications:
     email:false
+after_success: npm run coverage
 

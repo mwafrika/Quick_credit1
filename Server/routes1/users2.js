@@ -6,17 +6,16 @@ import dontenv from 'dotenv';
 
 import checkAuth from '../middleware/authentication';
 
-import UserController from '../controllers/user';
-import Validator from '../Server/middleware/validate';
-
-import User from '../models/user';
+import UserController from '../controllers1/user1';
+import Validator from '../middleware/validate';
+import User from '../models1/users1';
 
 dontenv.config();
 
 const userRoutes = express.Router();
 export const userController = new UserController();
 
-userRoutes.get('/', checkAuth, (_req, res, next) => {
+userRoutes.get('/', checkAuth, (_req, res) => {
   res.status(200).json({
     users: userController.usersList,
   });
