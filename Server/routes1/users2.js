@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable linebreak-style */
 import express from 'express';
 import bcrypt from 'bcrypt';

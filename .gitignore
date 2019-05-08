@@ -1,7 +1,9 @@
-node_modules
+node_modules 
+.nyc_output
 server2.js
 .eslintcache
 exercisAPI.js
 todo.js
-.nyc_output
+
+
 
