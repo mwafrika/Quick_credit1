@@ -4,7 +4,7 @@ import help from '../Helpers/LoanH';
 import user from '../Helpers/userH';
 
 const {
-  getCurrentLoans, getRepaidLoans, getAllLoans, addUserLoan, getLoanCount,
+  addUserLoan, getLoanCount, getCurrentLoans, getRepaidLoans, getAllLoans,
 } = help;
 const { getSingleUser } = user;
 
