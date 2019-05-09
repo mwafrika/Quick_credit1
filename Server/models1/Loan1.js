@@ -1,11 +1,7 @@
 /* eslint-disable max-len */
-/* eslint-disable semi */
-/* eslint-disable no-unreachable */
-/* eslint-disable no-lone-blocks */
-/* eslint-disable no-undef */
 /* eslint-disable linebreak-style */
 
-class Loan {
+export class Loan {
   constructor(id, user, createOn, status, repaid, tenor, amount, paymentInstallment, balance, interest) {
     this.id = id;
     this.user = user;
@@ -100,15 +96,9 @@ class Loan {
   }
 }
 
-const defaultLoan = new Loan(1, 'mwafrika', '12/1/2019', 'approved', true, '1 month', 500, '50/month', 600, '5%');
-const myLoans = [defaultLoan];
-myLoans.push(1, 'mwafrika', '12/1/2019', 'approved', true, '1 month', 500, '50/month', 600, '5%');
-myLoans.push(2, 'mwafrika', '12/1/2019', 'approved', true, '1 month', 500, '50/month', 600, '5%');
-myLoans.push(3, 'mwafrika', '12/1/2019', 'approved', true, '1 month', 500, '50/month', 600, '5%');
-myLoans.push(4, 'mwafrika', '12/1/2019', 'approved', true, '1 month', 500, '50/month', 600, '5%');
-myLoans.push(5, 'mwafrika', '12/1/2019', 'approved', true, '1 month', 500, '50/month', 600, '5%');
-myLoans.push(6, 'mwafrika', '12/1/2019', 'approved', true, '1 month', 500, '50/month', 600, '5%');
+export const defaultLoan = new Loan(1, 'mwafrika', '12/1/2019', 'approved', true, '1 month', 500, '50/month', 600, '5%');
+export const myLoans = [defaultLoan];
 
-module.exports = {
-  Loan, myLoans,
-};
+myLoans.push(new Loan(1, 'mwafrika', '12/1/2019', 'approved', true, '1 month', 500, '50/month', 600, '5%'));
+myLoans.push(new Loan(1, 'mwafrika', '12/1/2019', 'approved', true, '1 month', 500, '50/month', 600, '5%'));
+myLoans.push(new Loan(1, 'mwafrika', '12/1/2019', 'approved', true, '1 month', 500, '50/month', 600, '5%'));

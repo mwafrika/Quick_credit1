@@ -1,9 +1,18 @@
-class Repayment {
-  constructor(id, createOn, loanId, amount) {
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-expressions */
+/* eslint-disable no-shadow */
+/* eslint-disable no-mixed-spaces-and-tabs */
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-tabs */
+import { date } from 'joi';
+
+export class Repayment {
+  constructor(id, tenor, loanId, amount) {
     this.id = id;
-    this.createOn = createOn;
+    this.createOn = new Date();
     this.loanId = loanId;
     this.amount = amount;
+    this.tenor = tenor;
   }
 
   getId() {
@@ -14,37 +23,52 @@ class Repayment {
     this.id = id;
   }
 
-  getCreateOn() {
-    return this.createOn;
-  }
-
-  setCreateOn(createOn) {
-    this.createOn = createOn;
-  }
-
-  getLoanId() {
+	 getLoanId() {
     return this.loanId;
   }
 
-  setLoanId(loanId) {
+	 setLoanId(loanId) {
     this.loanId = loanId;
   }
 
-  getAmount() {
+	 getAmount() {
     return this.amount;
   }
 
-  setAmount(amount) {
+	 setAmount(amount) {
     this.amount = amount;
   }
-}
-const defaultRepay = new Repayment(1, '12/3/2019', 4, 500);
-const repay = [defaultRepay];
-repay.push(1, '1/2/2013', 6, 400);
-repay.push(2, '2/3/2019', 4, 300);
-repay.push(3, '1/2/2013', 6, 400);
-repay.push(5, '2/3/2019', 4, 300);
 
-module.exports = {
-  Repayment, repay,
-};
+	 getTenor() {
+    return this.tenor;
+  }
+
+  setTenor(tenor) {
+    this.tenor = tenor;
+  }
+
+  setDa(date) {
+    this.date = date;
+  }
+
+  getDate() {
+    return this.createdOn;
+  }
+}
+const defaultRepay = new Repayment(0, 3, 4, 500);
+
+const repay = [defaultRepay];
+
+repay.push(new Repayment(1, 6, 6, 400));
+repay.push(new Repayment(2, 6, 6, 400));
+repay.push(new Repayment(3, 6, 6, 400));
+repay.push(new Repayment(4, 6, 6, 400));
+
+// setLoanId[0];
+// setLoanId[3];
+// setLoanId[2];
+
+export default { Repayment, repay };
+// module.exports = {
+//   Repayment, repay,
+// };

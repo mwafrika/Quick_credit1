@@ -1,8 +1,2 @@
-node_modules 
-nyc_output
-exercisAPI.js
-todo.js
-get_set.js
-
-
-
+.nyc_output
+node_modules

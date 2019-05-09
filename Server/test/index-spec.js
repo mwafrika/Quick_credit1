@@ -1,10 +1,12 @@
+/* eslint-disable no-console */
+/* eslint-disable no-undef */
 /* eslint-disable linebreak-style */
 /* eslint-disable no-unused-vars */
 /* eslint-disable linebreak-style */
-const assert = require('assert');
-const chai = require('chai');
-const chaiHttp = require('chai-http');
-const { expect } = require('chai');
+import chai, { expect } from 'chai';
+import chaiHttp from 'chai-http';
+import 'mocha';
+
 const app = require('../config/index');
 
 const should = chai.should();
@@ -43,9 +45,9 @@ describe('Get current loans spec', () => {
         done();
       });
   });
-  it('it should return the current loans of lemoisson@quick-credit.com', (done) => {
+  it('it should return the current loans of josue@uguggu.com', (done) => {
     chai.request(app.app)
-      .get('/v1/loans/user/lemoisson@quick-credit.com/?status=approved&repaid=false')
+      .get('/v1/loans/user/josue@uguggu.com/?status=approved&repaid=false')
       .send('')
       .end((err, res) => {
         res.should.have.status(200);
@@ -68,7 +70,7 @@ describe('Get all repaid loans specs', () => {
   });
   it('it should return all the repaid loans for a specific user', (done) => {
     chai.request(app.app)
-      .get('/v1/loans/user/lemoisson@quick-credit.com/?status=approved&repaid=true')
+      .get('/v1/loans/user/josue@uguggu.com/?status=approved&repaid=true')
       .send('')
       .end((err, res) => {
         res.should.have.status(200);
@@ -91,7 +93,7 @@ describe('Get all  loans specs', () => {
   });
   it('it should return all loans for a specific user', (done) => {
     chai.request(app.app)
-      .get('/v1/loans/user/lemoisson@quick-credit.com/')
+      .get('/v1/loans/user/josue@uguggu/')
       .send('')
       .end((err, res) => {
         res.should.have.status(200);
@@ -102,17 +104,17 @@ describe('Get all  loans specs', () => {
   });
 });
 const newLoanCorrectData = {
-  userMail: 'murhulametre@quick-credit.com',
+  userMail: 'josue@uguggu',
   tenor: 12,
   amount: 2000,
 };
 const duplicateLoanRequestData = {
-  userMail: 'lemoisson@quick-credit.com',
+  userMail: 'josue@uguggu',
   tenor: 12,
   amount: 2000,
 };
 const FakeUserLoanRequestData = {
-  userMail: 'lemois@quik-credit.com',
+  userMail: 'josue@uguggu',
   tenor: 12,
   amount: 2000,
 };

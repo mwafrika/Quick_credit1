@@ -10,11 +10,12 @@ function signup(req, res) {
   else if (!req.body.fname)errorMessage = 'the first-name is required';
   else if (!req.body.lname)errorMessage = 'the last-name is required';
   else if (!req.body.address)errorMessage = 'the user name or email is not correct';
+  if (errorMessage) {
     res.status(400).send({
       status: 400,
       message: errorMessage,
     });
-  }else {
+  } else {
     const user = getSingleUser(req.body.email);
     if (!user[0]) {
       const newUser = new User(getUsersCount, req.body.email, req.body.fname,

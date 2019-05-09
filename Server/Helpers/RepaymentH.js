@@ -1,23 +1,27 @@
-/* eslint-disable linebreak-style */
-const loanRepayment = require('../model/LoanRepayment');
-const loanHelper = require('./loansHelper');
+/* eslint-disable max-len */
+import { loanRepayment } from '../models1/Repayment1';
+import { getRejected, editLoan } from './LoanH';
+import { updateLoan } from '../controllers1/loanUser';
+import { getUsers } from './userH';
+import { myLoans } from '../models1/Loan1';
 
 function updateLoanPayment(loanID, newAmount) {
-  const loan = loanHelper.getSingleLoan(loanID);
-  loan.setBalance(loan.getBalance() - newAmount);
-  return loanHelper.updateLoan(loan);
+  const newAmount1 = editLoan;
+  myLoans[loanID].setBalance(myLoans[loanID].balance - newAmount);
+  return updateLoan.updateLoan(newAmount1);
 }
-updateLoanPayment(0, loanRepayment.loanRepaymentData[0].getAmount());
+updateLoanPayment(0, loanRepayment.repay[0].getAmount());
 
 function addNewLoanRepayment(newRepayment) {
-  loanRepayment.loanRepaymentData.push(newRepayment);
-  return updateLoanPayment(newRepayment.getLoanId(), newRepayment.getAmount());
+  loanRepayment.repay.push(newRepayment);
+  return updateLoanPayment(newRepayment.getLoanId, newRepayment.getAmount());
 }
 function getRepaymentCount() {
-  return loanRepayment.loanRepaymentData.length;
+  return loanRepayment.repay.length;
 }
+// eslint-disable-next-line max-len
 function getLoanRepayment(loanID) {
- return loanRepayment.loanRepaymentData.filter(repayment => repayment.getLoanId().toString() === loanID);
+  return loanRepayment.repay.filter(repayment => repayment.getLoanId().toString() === loanID);
 }
 module.exports = {
   updateLoanPayment,
