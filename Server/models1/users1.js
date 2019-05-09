@@ -1,10 +1,10 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable linebreak-style */
-const jwt = require('jsonwebtoken');
+// const jwt = require('jsonwebtoken');
 
 export default class Users {
   constructor(id, firstName, lastName, emails, password, Country, status, isAdmin, address) {
-    this.jwt = jwt();
+    // this.jwt = jwt();
     this.id = id;
     this.firstName = firstName;
     this.lastName = lastName;

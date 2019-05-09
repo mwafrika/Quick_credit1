@@ -1,42 +1,38 @@
-export class Todo{
-    constructor(id,name,task){
-        this.id = id;
-        this.name = name;
-        this.task = task;
-    }
-     getId()
-      {
-		return this.id;
-	}
-      setId( id) 
-     {
-		this.id = id;
-	}
+/* eslint-disable import/prefer-default-export */
+export class Todo {
+  constructor(id, name, task) {
+    this.id = id;
+    this.name = name;
+    this.task = task;
+  }
 
-     getName() 
-    {
-		return this.name;
-	}
+  getId() {
+    return this.id;
+  }
 
-    setName(name)
-     {
-	this.name = name;
-	}
+  setId(id) {
+    this.id = id;
+  }
 
-    getTask()
-     {
-		return this.task;
-	}
+  getName() {
+    return this.name;
+  }
 
-     setTask(task)
-      {
-		this.task = task;
-	}
+  setName(name) {
+    this.name = name;
+  }
 
-    }
-const todo = new Todo(1,'josue','wash');
+  getTask() {
+    return this.task;
+  }
+
+  setTask(task) {
+    this.task = task;
+  }
+}
+const todo = new Todo(1, 'josue', 'wash');
 const myTodo = [todo];
-myTodo.push(1,'josue','wash');
-myTodo.push(1,'josue','wash');
-myTodo.push(1,'josue','wash');
-myTodo.push(1,'josue','wash');
+myTodo.push(1, 'josue', 'wash');
+myTodo.push(1, 'josue', 'wash');
+myTodo.push(1, 'josue', 'wash');
+myTodo.push(1, 'josue', 'wash');

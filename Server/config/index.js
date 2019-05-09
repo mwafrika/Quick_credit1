@@ -1,23 +1,19 @@
 /* eslint-disable linebreak-style */
 const express = require('express');
 const bodyParser = require('body-parser');
-const userRouter = require('../routes1/users2.js');
+const userRouter = require('../routes1/new_route');
 
-const exp = express();
-exp.use(bodyParser.json());
-exp.use(bodyParser.urlencoded({
-  extended: false,
-}));
-exp.use('/', userRouter);
-const route = 500;
-const Server = exp.listen(route, () => {
-  // eslint-disable-next-line no-console
-  console.log(`listening to the port ${route}`);
+const app = express();
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use('/', userRouter);
+const server = app.listen(7000, () => {
+  console.log('welcome to quick-credit');
 });
-function Break() {
-  Server.close();
+function closeServer() {
+  server.close();
 }
 module.exports = {
-  exp,
-  Break,
+  app,
+  closeServer,
 };

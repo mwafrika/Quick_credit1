@@ -1,9 +1,8 @@
 node_modules 
-.nyc_output
-server2.js
-.eslintcache
+nyc_output
 exercisAPI.js
 todo.js
+get_set.js
 
 
 
