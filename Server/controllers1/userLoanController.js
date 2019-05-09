@@ -1,14 +1,13 @@
 /* eslint-disable linebreak-style */
-import loan from '../models1/users1';
-import help from '../Helpers/LoanH';
-import user from '../Helpers/userH';
+import Loan from '../models1/Loan1';
 
 const {
-  addUserLoan, getLoanCount, getCurrentLoans, getRepaidLoans, getAllLoans,
-} = help;
-const { getSingleUser } = user;
+  getCurrentLoans, getRepaidLoans, getAllLoans, addUserLoan, getLoanCount,
+} = require('../Helpers/LoanH.js');
+const { getSingleUser } = require('../Helpers/userH');
 
-export function getUserLoan(req, res) {
+
+function getUserLoan(req, res) {
   if (req.query.status === 'approved' && req.query.repaid === 'false') {
     res.status(200).send({
       status: 200,
@@ -26,24 +25,24 @@ export function getUserLoan(req, res) {
     });
   }
 }
-export function updateLoan(req, res) {
+function addNewLoan(req, res) {
   let errorMessage = '';
   let status = 400;
-  if (!req.body.userMail) errorMessage = 'enter a usermail please';
-  else if (!req.body.tenor || Number.isNaN(req.body.tenor)) errorMessage = 'please specify a valid tenor';
-  else if (!req.body.amount || Number.isNaN(req.body.amount)) errorMessage = 'provide your amount please';
+  if (!req.body.userMail) errorMessage = 'Bad request, Please provide the user email';
+  else if (!req.body.tenor || Number.isNaN(req.body.tenor)) errorMessage = 'Bad request, Please provide a valide tenor';
+  else if (!req.body.amount || Number.isNaN(req.body.amount)) errorMessage = 'Bad request, please provide a valid loan amount';
   else {
-    const user1 = getSingleUser(req.body.userMail);
+    const user = getSingleUser(req.body.userMail);
     const currentLoans = getCurrentLoans(req.body.userMail);
-    if (!user1[0]) {
-      errorMessage = 'the mail you are trying to use is not valid';
+    if (!user[0]) {
+      errorMessage = 'Bad request, This user email doesn\'t exist';
       status = 403;
     } else if (currentLoans[0]) {
-      errorMessage = 'your loan is not fully paid';
+      errorMessage = 'Unauthorised, You still have a not fully paid loan';
       status = 400;
     } else {
       // eslint-disable-next-line max-len
-      const newLoan = addUserLoan(new loan.Loan(getLoanCount(), req.body.userMail, Number.parseInt(req.body.tenor, 10), Number.parseInt(req.body.amount, 10)));
+      const newLoan = addUserLoan(new Loan.Loan(getLoanCount(), req.body.userMail, Number.parseInt(req.body.tenor, 10), Number.parseInt(req.body.amount, 10)));
 
       res.status(200).send({
         status: 200,
@@ -58,8 +57,11 @@ export function updateLoan(req, res) {
     });
   }
 }
-
+export default {
+  getUserLoan,
+  addNewLoan,
+};
 // module.exports = {
 //   getUserLoan,
-//   updateLoan,
+//   addNewLoan,
 // };

@@ -1,30 +1,31 @@
-/* eslint-disable linebreak-style */
-import { loans } from '../models1/Loan1';
+/* eslint-disable no-unused-vars */
 
-function editLoan(loan1) {
-  loans[loans.id] = loans;
-  return loans[loan1.id];
+import { myLoans, Loan } from '../models1/Loan1';
+
+export function editLoan(loan) {
+  myLoans[loan.id] = loan;
+  return loan;
 }
-function getLoanCount() {
-  return loans.length;
+function getLoanCount(loan) {
+  return loan.length;
 }
-function searchLoanByUser(email, myloans) {
-  return myloans.filter(loan => loan.userMail === email);
+function searchLoanByUser(email) {
+  return myLoans.filter(loan => myLoans.userMail === email);
 }
 function getAllLoans(email) {
-  if (email) return searchLoanByUser(email, loans);
-  return loans;
+  if (email) return searchLoanByUser(email, myLoans);
+  return myLoans;
 }
 function addLoan(newLoan) {
-  loans.push(newLoan);
-  return loans[newLoan.id];
+  myLoans.push(newLoan);
+  return myLoans[newLoan.id];
 }
 function getSingleLoan(loanID) {
-  return loans[loanID];
+  return myLoans[loanID];
 }
 function getAllAproved(email) {
-  if (email) return (email, searchLoanByUser(email, loans.filter(loan => loan.getStatus() === 'approved')));
-  return loans.filter(loan => loan.getStatus() === 'approved');
+  if (email) return (email, searchLoanByUser(email, myLoans.filter(myLoan => Loan.getStatus() === 'approved')));
+  return myLoans.filter(myLoan => Loan.getStatus() === 'approved');
 }
 function getCurrent(email) {
   return getAllAproved(email).filter(loan => loan.isRepaid() === false);
@@ -32,13 +33,13 @@ function getCurrent(email) {
 function getRepaid(email) {
   return getAllAproved(email).filter(loan => loan.isRepaid() === true);
 }
-function getPending(email) {
-  if (email) return (email, searchLoanByUser(email, loans.filter(loan => loan.getStatus() === 'pending')));
-  return loans.filter(loan => loan.getStatus() === 'pending');
+export function getPending(email) {
+  if (email) return (email, searchLoanByUser(email, myLoans.filter(loan => loan.getStatus() === 'pending')));
+  return myLoans.filter(loan => Loan.getStatus() === 'pending');
 }
-function getRejected(email) {
-  if (email) return (email, searchLoanByUser(email, loans.filter(loan => loan.getStatus() === 'rejected')));
-  return loans.filter(loan => loan.getStatus() === 'rejected');
+export function getRejected(email) {
+  if (email) return (email, searchLoanByUser(email, myLoans.filter(loan => Loan.getStatus() === 'rejected')));
+  return myLoans.filter(loan => Loan.getStatus() === 'rejected');
 }
 
 export default {

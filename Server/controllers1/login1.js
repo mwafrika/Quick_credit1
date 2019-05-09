@@ -2,7 +2,7 @@
 import loanH from '../Helpers/userH';
 import dep from '../Helpers/indexH';
 
-function login(req, res) {
+export default function login(req, res) {
   if (!req.body.email) {
     res.status(400).send({
       success: 'false',
@@ -36,4 +36,4 @@ function login(req, res) {
   }
   return res;
 }
-module.exports = login;
+// module.exports = login;
