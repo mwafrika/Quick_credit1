@@ -1,15 +1,17 @@
 /* eslint-disable linebreak-style */
-const express = require('express'); 
-const bodyParser = require('body-parser');
-const login = require('./login');
-const signup = require('./signup');
-const verifyUser = require('./verify_user');
-const loanAdmin = require('./loan_admin').default;
-const loanUser = require('./loan_user');
-const loanRepayment = require('./loanRepayment');
+
+import express from 'express';
+import bodyParser from 'body-parser';
+import login from './login_controller';
+import signup from './signup_controller';
+import verify from './verify_user_controller';
+// eslint-disable-next-line camelcase
+import loan_admin from './loan_admin_controller';
+import loanUser from './loan_user_controller';
+import loanRepayment from './loanRepayment_controller';
 
 const app = express();
-// Parse incoming requests data
+// incoming data
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -19,10 +21,10 @@ app.get('/', (req, res) => {
 loanUser.addNewLoan(app);
 login.login(app); // starting the login endpoint
 signup.signup(app); // starting the signup endpoint
-verifyUser.verify(app);
+verify.verify(app);
 loanUser.getUserLoan(app);
-loanAdmin.getAdminLoan(app);
-loanAdmin.approveLoan(app);
+loan_admin.getAdminLoan(app);
+loan_admin.approveLoan(app);
 loanRepayment.addPayment(app);
 loanRepayment.getRepayments(app);
 const server = app.listen(7000, () => {
@@ -37,4 +39,3 @@ module.exports = {
   app,
   closeServer,
 };
-

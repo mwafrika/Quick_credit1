@@ -17,7 +17,8 @@ function getRepaymentCount() {
   return loanRepayment.loanRepaymentData.length;
 }
 function getLoanRepayment(loanID) {
-  return loanRepayment.loanRepaymentData.filter(repayment => repayment.getLoanId().toString() === loanID);
+  return loanRepayment.loanRepaymentData.filter(repayment => repayment.getLoanId().toString()
+   === loanID);
 }
 module.exports = {
   updateLoanPayment,

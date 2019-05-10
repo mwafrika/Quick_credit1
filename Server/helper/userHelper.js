@@ -1,5 +1,5 @@
 /* eslint-disable linebreak-style */
-const userData = require('../model/user');
+const userData = require('../model/user').default;
 
 
 function getUsers() {

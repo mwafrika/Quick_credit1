@@ -1,5 +1,5 @@
 /* eslint-disable linebreak-style */
-const uuidv1 = require('uuid/v1');
+import uuidv1 from 'uuid/v1';
 
 class User {
   constructor(id, email, firstName, lastName, password, address, country, status, isAdmin) {
@@ -59,7 +59,7 @@ const normalUser1 = new User(1, 'murhulametre@quick-credit.com', 'lemoisson', 'M
 
 const users = [admin, normalUser, normalUser1];
 
-module.exports = {
+export default {
   User,
   users,
 };

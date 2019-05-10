@@ -1,18 +1,15 @@
-/* eslint-disable no-console */
-/* eslint-disable no-undef */
-/* eslint-disable linebreak-style */
 /* eslint-disable no-unused-vars */
 /* eslint-disable linebreak-style */
-import chai, { expect } from 'chai';
-import chaiHttp from 'chai-http';
-import 'mocha';
-
+const assert = require('assert');
+const chai = require('chai');
+const chaiHttp = require('chai-http');
+const { expect } = require('chai');
 const app = require('../config/index');
 
 const should = chai.should();
 chai.use(chaiHttp);
 
-describe('Get single loan spec', () => {
+describe('Apply for only one loan', () => {
   it('it should return the loan with id=0', (done) => {
     chai.request(app.app)
       .get('/v1/loans/0')
@@ -45,9 +42,9 @@ describe('Get current loans spec', () => {
         done();
       });
   });
-  it('it should return the current loans of josue@uguggu.com', (done) => {
+  it('it should return the current loans of mwafrikajosue@gmail.com', (done) => {
     chai.request(app.app)
-      .get('/v1/loans/user/josue@uguggu.com/?status=approved&repaid=false')
+      .get('/v1/loans/user/mwafrikajosue@gmail.com/?status=approved&repaid=false')
       .send('')
       .end((err, res) => {
         res.should.have.status(200);
@@ -70,7 +67,7 @@ describe('Get all repaid loans specs', () => {
   });
   it('it should return all the repaid loans for a specific user', (done) => {
     chai.request(app.app)
-      .get('/v1/loans/user/josue@uguggu.com/?status=approved&repaid=true')
+      .get('/v1/loans/user/mwafrikajosue@gmail.com/?status=approved&repaid=true')
       .send('')
       .end((err, res) => {
         res.should.have.status(200);
@@ -93,7 +90,7 @@ describe('Get all  loans specs', () => {
   });
   it('it should return all loans for a specific user', (done) => {
     chai.request(app.app)
-      .get('/v1/loans/user/josue@uguggu/')
+      .get('/v1/loans/user/mwafrikajosue@gmail.com/')
       .send('')
       .end((err, res) => {
         res.should.have.status(200);
@@ -104,17 +101,17 @@ describe('Get all  loans specs', () => {
   });
 });
 const newLoanCorrectData = {
-  userMail: 'josue@uguggu',
+  userMail: 'josue@gmail.com',
   tenor: 12,
   amount: 2000,
 };
 const duplicateLoanRequestData = {
-  userMail: 'josue@uguggu',
+  userMail: 'mwafrikajosue@gmail.com',
   tenor: 12,
   amount: 2000,
 };
 const FakeUserLoanRequestData = {
-  userMail: 'josue@uguggu',
+  userMail: 'mwafrikajosue@gmail.com',
   tenor: 12,
   amount: 2000,
 };

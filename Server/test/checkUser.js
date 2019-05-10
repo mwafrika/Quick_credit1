@@ -11,11 +11,9 @@ chai.use(chaiHttp);
 describe('verify user', () => {
   it('it should not verify user if mail does not exist', (done) => {
     chai.request(app.app)
-      .patch('/v1/users/leol@gmail.com/verify')
-      .send('') // this is like sending $http.post or this.http.post in Angular
-      .end((err, res) => { // when we get a response from the endpoint
-        // in other words,
-        // the res object should have a status of 201
+      .patch('/v1/users/mnnjn@gmail.com/verify')
+      .send('') 
+      .end((err, res) => { 
         res.should.have.status(403);
         console.log(res.body.message);
         done();
@@ -23,11 +21,9 @@ describe('verify user', () => {
   });
   it('should return a 200 and new userdata when email exists', (done) => {
     chai.request(app.app)
-      .patch('/v1/users/lemoisson@quick-credit.com/verify')
-      .send('') // this is like sending $http.post or this.http.post in Angular
-      .end((err, res) => { // when we get a response from the endpoint
-        // in other words,
-        // the res object should have a status of 201
+      .patch('/v1/users/mwafrikajosue@gmail.com/verify')
+      .send('') 
+      .end((err, res) => { 
         res.should.have.status(200);
         console.log(res.body);
         done();
