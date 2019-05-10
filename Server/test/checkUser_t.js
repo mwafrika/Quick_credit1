@@ -8,8 +8,6 @@ const app = require('../config/index');
 
 const should = chai.should();
 chai.use(chaiHttp);
-
-
 describe('check user', () => {
   it('should add data when mail exist', (done) => {
     chai.request(app.app)
