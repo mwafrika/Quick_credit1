@@ -6,31 +6,31 @@ export function editLoan(loan) {
   myLoans[loan.id] = loan;
   return loan;
 }
-function getLoanCount(loan) {
+export function getLoanCount(loan) {
   return loan.length;
 }
 function searchLoanByUser(email) {
   return myLoans.filter(loan => myLoans.userMail === email);
 }
-function getAllLoans(email) {
+export function getAllLoans(email) {
   if (email) return searchLoanByUser(email, myLoans);
   return myLoans;
 }
-function addLoan(newLoan) {
+export function addLoan(newLoan) {
   myLoans.push(newLoan);
   return myLoans[newLoan.id];
 }
-function getSingleLoan(loanID) {
+export function getSingleLoan(loanID) {
   return myLoans[loanID];
 }
-function getAllAproved(email) {
+export function getAllAproved(email) {
   if (email) return (email, searchLoanByUser(email, myLoans.filter(myLoan => Loan.getStatus() === 'approved')));
   return myLoans.filter(myLoan => Loan.getStatus() === 'approved');
 }
-function getCurrent(email) {
+export function getCurrent(email) {
   return getAllAproved(email).filter(loan => loan.isRepaid() === false);
 }
-function getRepaid(email) {
+export function getRepaid(email) {
   return getAllAproved(email).filter(loan => loan.isRepaid() === true);
 }
 export function getPending(email) {

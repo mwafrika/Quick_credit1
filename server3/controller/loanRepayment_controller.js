@@ -1,24 +1,22 @@
+/* eslint-disable max-len */
 /* eslint-disable linebreak-style */
-import {
-  getAllLoans, getSingleLoan, addLoan, getRepaid,
-} from '../Helpers/LoanH';
-import { loanRepayment } from '../models1/Loan1';
-import {
-  updateLoanPayment, addNewLoanRepayment, getRepaymentCount, getLoanRepayment,
-} from '../Helpers/RepaymentH';
+const loanHelper = require('../helper/loansHelper');
+const LoanRepayment = require('../model/LoanRepayment');
+const loanRepaymentHelper = require('../helper/loanRepaymentsHelper');
 
-function addPayent(req, res) {
-  const loan = getSingleLoan(req.params.loanID);
+function addPayment(req, res) {
+  const loan = loanHelper.getSingleLoan(req.params.loanID);
   if (loan) {
-    if (!loan.isRepaid()) {
-      if (req.body.amount && !isNaN(req.body.amount)) {
-        const tenor = Number.parseFloat(req.body.amount) / loan.getPaymentInstallment();
-        const newRepayment = new getLoanRepayment(getLoanRepayment, getLoanRepayment.loanID, req.body.amount, tenor);
+    if (!(loan.isRepaid())) {
+      if(req.body.amount && !(isNaN(req.body.amount)){
+        const tenorCovered = Number.parseFloat(req.body.amount) / loan.getPaymentInstallment();
+        const newRepayment = new LoanRepayment.LoanRepayment(loanRepaymentHelper.getRepaymentCount(), loan.getID(), req.body.amount, tenorCovered);
         res.status(200).send({
           status: 200,
-          data: JSON.stringify(getRepayments.addNewLoanRepaymen(newRepayment)),
+          data: JSON.stringify(loanRepaymentHelper.addNewLoanRepayment(newRepayment)),
         });
-      } else {
+      }else
+      {
         res.status(400).send({
           status: 400,
           message: 'Please provide valid parameters',
