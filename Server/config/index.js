@@ -1,5 +1,6 @@
 /* eslint-disable no-console */
 /* eslint-disable linebreak-style */
+import router from '../routes/routes';
 const express = require('express');
 const bodyParser = require('body-parser');
 // const userRouter = require('../routes/routes');
@@ -8,6 +9,7 @@ const app = express();
 // Parse incoming requests data
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use('/', router);
 
 const port = process.env.PORT || 3000;
 
