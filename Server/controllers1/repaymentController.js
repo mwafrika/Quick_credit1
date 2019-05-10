@@ -1,18 +1,22 @@
 /* eslint-disable linebreak-style */
-const loanHelper = require('../Helpers/LoanH');
-const LoanRepayment = require('../models1/Loan1');
-const loanRepaymentHelper = require('../Helpers/RepaymentH');
+import {
+  getAllLoans, getSingleLoan, addLoan, getRepaid,
+} from '../Helpers/LoanH';
+import { loanRepayment } from '../models1/Loan1';
+import {
+  updateLoanPayment, addNewLoanRepayment, getRepaymentCount, getLoanRepayment,
+} from '../Helpers/RepaymentH';
 
-function addPayment(req, res) {
-  const loan = loanHelper.getSingleLoan(req.params.loanID);
+function addPayent(req, res) {
+  const loan = getSingleLoan(req.params.loanID);
   if (loan) {
     if (!loan.isRepaid()) {
       if (req.body.amount && !isNaN(req.body.amount)) {
-        const tenorCovered = Number.parseFloat(req.body.amount) / loan.getPaymentInstallment();
-        const newRepayment = new LoanRepayment.LoanRepayment(loanRepaymentHelper.getRepaymentCount(), loan.getID(), req.body.amount, tenorCovered);
+        const tenor = Number.parseFloat(req.body.amount) / loan.getPaymentInstallment();
+        const newRepayment = new getLoanRepayment(getLoanRepayment, getLoanRepayment.loanID, req.body.amount, tenor);
         res.status(200).send({
           status: 200,
-          data: JSON.stringify(loanRepaymentHelper.addNewLoanRepayment(newRepayment)),
+          data: JSON.stringify(getRepayments.addNewLoanRepaymen(newRepayment)),
         });
       } else {
         res.status(400).send({
