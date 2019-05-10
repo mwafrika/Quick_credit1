@@ -1,5 +1,3 @@
-/* eslint-disable linebreak-style */
-const assert = require('assert');
 const chai = require('chai');
 const chaiHttp = require('chai-http');
 const { expect } = require('chai');
@@ -8,7 +6,7 @@ const app = require('../config/index');
 const should = chai.should();
 chai.use(chaiHttp);
 const fakeRepaymentData = {
-  amount: 'lemoisson',
+  amount: 'jjjjj',
 };
 const correctRepaymentData = {
   amount: '210',

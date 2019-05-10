@@ -1,66 +1,62 @@
+
+/* eslint-disable no-console */
 /* eslint-disable linebreak-style */
-const assert = require('assert');
 const chai = require('chai');
 const chaiHttp = require('chai-http');
 const app = require('../config/index');
 
 const should = chai.should();
+
 chai.use(chaiHttp);
+
 const loginDetails = {
-  email: 'lemoisson@quick-credit.com',
+  email: 'josue@gmail.com',
   password: '12345678',
-  fname: 'lemoissn',
-  lname: 'metre',
-  country: 'Republic of Rwanda ',
-  address: 'Rubavu',
-  city: 'Gisenyi',
+  fname: 'josue',
+  lname: 'josh',
+  country: 'drc ',
+  address: 'goma',
+  city: 'kampala',
 };
 const loginDetailsTrue = {
-  email: 'lemoissonM@quick-credit.com',
+  email: 'mwafrikajosue@gmail.com',
   password: '12345678',
-  fname: 'lemoissn',
-  lname: 'metre',
-  country: 'Republic of Rwanda ',
-  address: 'Rubavu',
-  city: 'Gisenyi',
+  fname: 'josue',
+  lname: 'josh',
+  country: 'drc ',
+  address: 'goma',
+  city: 'kampala',
 };
 describe('Signup', () => {
-  it('it should not create an account with undefinned values', (done) => {
+  it('it should create an account with with valid credential', (done) => {
     chai.request(app.app)
       .post('/v1/auth/signup')
-      .send('') // this is like sending $http.post or this.http.post in Angular
-      .end((err, res) => { // when we get a response from the endpoint
-        // in other words,
-        // the res object should have a status of 201
+      .send('')
+      .end((err, res) => {
         res.should.have.status(400);
         console.log(res.body.message);
         done();
       });
   });
-  it('it should not create an account if the email is already taken', (done) => {
+  it('it should not create an account if the email has been taken', (done) => {
     chai.request(app.app)
       .post('/v1/auth/signup')
-      .send(loginDetails) // this is like sending $http.post or this.http.post in Angular
-      .end((err, res) => { // when we get a response from the endpoint
-        // in other words,
-        // the res object should have a status of 201
+      .send(loginDetails)
+      .end((err, res) => {
         res.should.have.status(403);
         console.log(res.body.message);
         done();
       });
   });
-  it('should return a 200 status and user data when everything is okey', (done) => {
+  it('should return a 200 status and user data if information provided is correct', (done) => {
     chai.request(app.app)
       .post('/v1/auth/signup')
-      .send(loginDetailsTrue) // this is like sending $http.post or this.http.post in Angular
-      .end((err, res) => { // when we get a response from the endpoint
-        // in other words,
-        // the res object should have a status of 201
+      .send(loginDetailsTrue)
+      .end((err, res) => {
         res.should.have.status(200);
-        chai.expect(JSON.parse(res.body.data).email).equal('lemoissonM@quick-credit.com');
+        chai.expect(JSON.parse(res.body.data).email).equal('mwafrikajosue@gmail.com');
         console.log(JSON.parse(res.body.data));
         done();
-        //app.closeServer();
       });
   });
 });

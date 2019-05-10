@@ -1,86 +1,66 @@
 class Loan {
- 
- constructor(id, userMail, tenor, amount) {
-   
- this.id = id;
+  constructor(id, userMail, tenor, amount) {
+    this.id = id;
     this.userMail = userMail;
-  
-  this.tenor = tenor;
+
+    this.tenor = tenor;
     this.amount = amount;
-  
-  this.repaid = false;
+
+    this.repaid = false;
     this.interest = (amount * 5) / 100;
- 
-   this.paymentInstallment = (this.amount + this.interest) / this.tenor;
-  
-  this.balance = amount + this.interest;
-   
- this.createdOn = new Date();
- 
-   this.status = 'pending';
- 
- }
 
- 
- getID() {
-  
-  return this.id;
+    this.paymentInstallment = (this.amount + this.interest) / this.tenor;
+
+    this.balance = amount + this.interest;
+
+    this.createdOn = new Date();
+    this.status = 'pending';
   }
 
- 
- getStatus() {
-   
- 
-return this.status;
+  getID() {
+    return this.id;
   }
 
- 
- setStatus(status) {
- 
-   this.status = status;
+  getStatus() {
+    return this.status;
   }
 
-  
-getUserMail() {
- 
-   return this.userMail;
+  setStatus(status) {
+    this.status = status;
   }
 
- 
- getTenor() {
- 
-   return this.tenor;
+
+  getUserMail() {
+    return this.userMail;
   }
 
-  
-getAmount() {
-   
- return this.amount;
+
+  getTenor() {
+    return this.tenor;
   }
 
- 
- getPaymentInstallment() {
- 
-   return this.paymentInstallment;
- 
- }
+
+  getAmount() {
+    return this.amount;
+  }
+
+
+  getPaymentInstallment() {
+    return this.paymentInstallment;
+  }
 
   getBalance() {
-   
- return this.balance;
-  
-}
+    return this.balance;
+  }
 
   setBalance(balance) {
- 
-   this.balance = balance;
-  
-  if (balance < 0) {
-      this.repaid = true;
-    
-  this.balance = 0;
-    }
+    this.balance = balance;
 
+    if (balance < 0) {
+      this.repaid = true;
+
+      this.balance = 0;
+    }
   }
 
   isRepaid() {
@@ -89,22 +69,17 @@ getAmount() {
 
 
   setRepaidStatus(repaidStatus) {
-   
- this.repaid = repaidStatus;
-  
-}
-
-  getInterest() {
-    
-return this.interest;
+    this.repaid = repaidStatus;
   }
 
-  
-getCreatedOn() {
-    
-return this.createdOn;
-  
-}
+  getInterest() {
+    return this.interest;
+  }
+
+
+  getCreatedOn() {
+    return this.createdOn;
+  }
 }
 
 
