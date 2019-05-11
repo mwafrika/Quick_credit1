@@ -1,6 +1,6 @@
 /* eslint-disable import/no-unresolved */
 /* eslint-disable linebreak-style */
-import Router from 'express';
+import { Router } from 'express';
 import signup from '../controller/signup_controller';
 import login from '../controller/login_controller';
 import verify from '../controller/verify_user_controller';
@@ -13,7 +13,7 @@ const router = Router();
 router.post('/v1/auth/signin', login);
 router.post('/v1/auth/signup', signup);
 router.patch('/v1/users/:userEmail/verify', verify);
-router.get('/v1/loans/user/:email/', getUserLoan);
+router.get('/v1/loans/user/:email', getUserLoan);
 router.post('/v1/loans/', addNewLoan);
 router.get('/v1/loans', getloans);
 router.get('/v1/loans/:loanID', getSpecificLoan);

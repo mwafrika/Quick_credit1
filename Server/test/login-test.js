@@ -18,7 +18,7 @@ const login_details = {
 
 const loginDetailsTrue = {
   email: 'mwafrikajosue@gmail.com',
-  password: '12345678',
+  password: '123',
 };
 
 describe('login', () => {

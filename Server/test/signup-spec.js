@@ -20,9 +20,9 @@ const loginDetails = {
 };
 const loginDetailsTrue = {
   email: 'mwafrikajosue@gmail.com',
-  password: '12345678',
+  password: '123',
   fname: 'josue',
-  lname: 'josh',
+  lname: 'josue',
   country: 'drc ',
   address: 'goma',
   city: 'kampala',

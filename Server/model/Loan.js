@@ -83,25 +83,25 @@ class Loan {
 }
 
 
-const firstLoan = new Loan(0, 'lemoisson@quick-credit.com', 12, 1200);
+const firstLoan = new Loan(0, 'mwafrikajosue@gmail.com', 12, 1200);
 
 const loans = [firstLoan];
 
-loans.push(new Loan(1, 'lemoissonM@quick-credit.com', 10, 2000));
+loans.push(new Loan(1, 'mwafrikajosue@gmail.com', 10, 2000));
 
-loans.push(new Loan(2, 'lemoissonM@quick-credit.com', 9, 1500));
+loans.push(new Loan(2, 'mwafrikajosue@gmail.com', 9, 1500));
 
-loans.push(new Loan(3, 'lemoisson@quick-credit.com', 2, 500));
+loans.push(new Loan(3, 'mwafrikajosue@gmail.com', 2, 500));
 
-loans.push(new Loan(4, 'lemoisson@quick-credit.com', 4, 5000));
+loans.push(new Loan(4, 'mwafrikajosue@gmail.com', 4, 5000));
 
-loans.push(new Loan(5, 'lemoisson@quick-credit.com', 7, 8000));
+loans.push(new Loan(5, 'mwafrikajosue@gmail.com', 7, 8000));
 
-loans.push(new Loan(6, 'lemoisson@quick-credit.com', 4, 300));
+loans.push(new Loan(6, 'mwafrikajosue@gmail.com', 4, 300));
 
-loans.push(new Loan(7, 'lemoisson@quick-credit.com', 9, 5000));
+loans.push(new Loan(7, 'mwafrikajosue@gmail.com', 9, 5000));
 
-loans.push(new Loan(8, 'lemoisson@quick-credit.com', 10, 2000));
+loans.push(new Loan(8, 'mwafrikajosue@gmail.com', 10, 2000));
 
 loans[0].setStatus('approved');
 
