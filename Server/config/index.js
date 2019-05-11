@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 /* eslint-disable linebreak-style */
-import router from '../routes/routes';
+import router from '../router/routes';
+
 const express = require('express');
 const bodyParser = require('body-parser');
 // const userRouter = require('../routes/routes');
@@ -10,13 +11,14 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/', router);
+app.get('/test', (req, res) => {
+  res.send('lemoisosn');
+});
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 15000;
 
 const server = app.listen(port, () => {
-  // eslint-disable-next-line no-console
-  // req.send('hello mwafrika');
-  console.log('welcome to quick-credit');
+  console.log(port);
 });
 function closeServer() {
   server.close();

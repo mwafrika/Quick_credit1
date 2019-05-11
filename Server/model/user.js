@@ -53,9 +53,9 @@ class User {
   }
 }
 
-const admin = new User(0, 'admin@quick-credit.com', 'lemoisson', 'Metre', '12345678', 'Gisozi, Kigali', 'Republic of Rwanda', 'verified', true);
-const normalUser = new User(1, 'lemoisson@quick-credit.com', 'lemoisson', 'Metre', '12345678', 'Gisozi, Kigali', 'Republic of Rwanda', 'unverified', false);
-const normalUser1 = new User(1, 'murhulametre@quick-credit.com', 'lemoisson', 'Metre', '12345678', 'Gisozi, Kigali', 'Republic of Rwanda', 'unverified', false);
+const admin = new User(0, 'mwafrika', 'josue', 'mufungizi', '12345678', 'goma, kinshasa', 'DRC', 'verified', true);
+const normalUser = new User(1, 'mwafrikajosue@gmail.com', 'josue', 'josue', '12345678', 'Gisozi, Kigali', 'DRC', 'unchecked', false);
+const normalUser1 = new User(1, 'mwafrikajosue@gmail.com', 'junior', 'Linda', '12345678', 'Gisozi, Goma', 'Republic of Rwanda', 'unverified', false);
 
 const users = [admin, normalUser, normalUser1];
 
