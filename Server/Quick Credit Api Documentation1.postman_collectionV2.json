@@ -1,0 +1,647 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Quick Credit Api Documentation1",
+		"_postman_id": "bac34da9-1b7a-a9ad-2996-808ad132e6ee",
+		"description": "Quick Credit is an online lending platform that provides short term soft loans to individuals. This helps solve problems of financial inclusion as a way to alleviate poverty and empower low income earners.  throught this api documentation, users can be able to create loan account, to login, to request a loan as well as to view their tranctions history. the admin is the granted all privileges to make any request, to grant loans , to approve a loan application or to reject it, to see all loan history and manage each one, he can see also the specific loan corresponding to the user and finally he can post loan in favour of clients.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Loans list",
+			"description": "",
+			"item": [
+				{
+					"name": "localhost:15000/v1/loans",
+					"request": {
+						"url": "localhost:15000/v1/loans",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "",
+								"value": "",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "address",
+									"value": "goma",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"description": "with this request the admin can get all loans for the clients registered in the system."
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:15000/v1/loans/1",
+					"request": {
+						"url": "localhost:15000/v1/loans/1",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "",
+								"value": "",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "address",
+									"value": "goma",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"description": "the admin can choose a specific loan by ID"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:15000/v1/loans/:loanID",
+					"request": {
+						"url": {
+							"raw": "localhost:15000/v1/loans/:loanID",
+							"host": [
+								"localhost"
+							],
+							"port": "15000",
+							"path": [
+								"v1",
+								"loans",
+								":loanID"
+							],
+							"query": [],
+							"variable": [
+								{
+									"key": "loanID",
+									"value": ""
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "",
+								"value": "",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "address",
+									"value": "goma",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Aproave a loan after checking client loan application"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:15000/v1/loans/:loanID",
+					"request": {
+						"url": {
+							"raw": "localhost:15000/v1/loans/:loanID",
+							"host": [
+								"localhost"
+							],
+							"port": "15000",
+							"path": [
+								"v1",
+								"loans",
+								":loanID"
+							],
+							"query": [],
+							"variable": [
+								{
+									"key": "loanID",
+									"value": ""
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "",
+								"value": "",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "address",
+									"value": "goma",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"description": "get specific loan from the list of loans"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:15000/v1/loans/:loanID/repayment",
+					"request": {
+						"url": {
+							"raw": "localhost:15000/v1/loans/:loanID/repayment",
+							"host": [
+								"localhost"
+							],
+							"port": "15000",
+							"path": [
+								"v1",
+								"loans",
+								":loanID",
+								"repayment"
+							],
+							"query": [],
+							"variable": [
+								{
+									"key": "loanID",
+									"value": "1"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "loanId",
+									"value": "7",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "5",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "tenoorCovered",
+									"value": "6",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:15000/v1/loans/:loanID",
+					"request": {
+						"url": {
+							"raw": "localhost:15000/v1/loans/:loanID",
+							"host": [
+								"localhost"
+							],
+							"port": "15000",
+							"path": [
+								"v1",
+								"loans",
+								":loanID"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"equals": true,
+									"description": "",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "loanID",
+									"value": "1"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "loanId",
+									"value": "4",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "5",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "tenoorCovered",
+									"value": "6",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": "loan repayment"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:15000/v1/loans/:loanID/repayment",
+					"request": {
+						"url": {
+							"raw": "localhost:15000/v1/loans/:loanID/repayment",
+							"host": [
+								"localhost"
+							],
+							"port": "15000",
+							"path": [
+								"v1",
+								"loans",
+								":loanID",
+								"repayment"
+							],
+							"query": [],
+							"variable": [
+								{
+									"key": "loanID",
+									"value": "1"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "loanId",
+									"value": "7",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "5",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "tenoorCovered",
+									"value": "6",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:15000/v1/loans/:loanID/repayment",
+					"request": {
+						"url": {
+							"raw": "localhost:15000/v1/loans/:loanID/repayment",
+							"host": [
+								"localhost"
+							],
+							"port": "15000",
+							"path": [
+								"v1",
+								"loans",
+								":loanID",
+								"repayment"
+							],
+							"query": [],
+							"variable": [
+								{
+									"key": "loanID",
+									"value": "1"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "loanId",
+									"value": "7",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "5",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "tenoorCovered",
+									"value": "6",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"description": "all users operations should be here",
+			"item": [
+				{
+					"name": "localhost:15000/v1/auth/signup",
+					"request": {
+						"url": "localhost:15000/v1/auth/signup",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "",
+								"value": "",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "josuemwafrika2019@gmail.com",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "fname",
+									"value": "jos123",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "lname",
+									"value": "mwafrika",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "gisenyi",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "congo",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": "this api request allow users to create account using and secure it to be used with only one registered person ."
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:15000/v1/auth/signup",
+					"request": {
+						"url": "localhost:15000/v1/auth/signup",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "",
+								"value": "",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "josuemwafrika2019@gmail.com",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "fname",
+									"value": "jos123",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "lname",
+									"value": "mwafrika",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "gisenyi",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "congo",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": "when a user has already signed up, he cannot create create another account with the same e-mail address"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:15000/v1/auth/signin",
+					"request": {
+						"url": "localhost:15000/v1/auth/signin",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "",
+								"value": "",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "jordan@gmail.com",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": "user name and password must be correct to login.\nuser name = jordan@gmail.com\npass word = 12"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:15000/v1/auth/signin",
+					"request": {
+						"url": "localhost:15000/v1/auth/signin",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "",
+								"value": "",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "jordan@gmail.com",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "121",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": "if wrong password or username is provided, there will not be access"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "loan repayment",
+			"description": "",
+			"item": []
+		}
+	]
+}

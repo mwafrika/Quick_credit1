@@ -5,7 +5,6 @@ class Loan {
 
     this.tenor = tenor;
     this.amount = amount;
-
     this.repaid = false;
     this.interest = (amount * 5) / 100;
 
@@ -43,7 +42,6 @@ class Loan {
   getAmount() {
     return this.amount;
   }
-
 
   getPaymentInstallment() {
     return this.paymentInstallment;
@@ -87,25 +85,25 @@ const firstLoan = new Loan(0, 'mwafrikajosue@gmail.com', 12, 1200);
 
 const loans = [firstLoan];
 
-loans.push(new Loan(1, 'mwafrikajosue@gmail.com', 10, 2000));
+loans.push(new Loan(1, 'mwafrikajosue1@gmail.com', 10, 2000));
 
-loans.push(new Loan(2, 'mwafrikajosue@gmail.com', 9, 1500));
+loans.push(new Loan(2, 'mwafrikajosue1@gmail.com', 9, 1500));
 
-loans.push(new Loan(3, 'mwafrikajosue@gmail.com', 2, 500));
+loans.push(new Loan(3, 'mwafrikajosue21@gmail.com', 2, 500));
 
-loans.push(new Loan(4, 'mwafrikajosue@gmail.com', 4, 5000));
+loans.push(new Loan(4, 'mwafrikajosue11@gmail.com', 4, 5000));
 
-loans.push(new Loan(5, 'mwafrikajosue@gmail.com', 7, 8000));
+loans.push(new Loan(5, 'mwafrikajosue12@gmail.com', 7, 8000));
 
-loans.push(new Loan(6, 'mwafrikajosue@gmail.com', 4, 300));
+loans.push(new Loan(6, 'mwafrikajosue13@gmail.com', 4, 300));
 
-loans.push(new Loan(7, 'mwafrikajosue@gmail.com', 9, 5000));
+loans.push(new Loan(7, 'mwafrikajosue4@gmail.com', 9, 5000));
 
-loans.push(new Loan(8, 'mwafrikajosue@gmail.com', 10, 2000));
+loans.push(new Loan(8, 'mwafrikajosue5@gmail.com', 10, 2000));
 
 loans[0].setStatus('approved');
 
-loans[1].setStatus('approved');
+loans[1].setStatus('rejected');
 
 loans[2].setStatus('approved');
 
@@ -114,7 +112,6 @@ loans[3].setStatus('approved');
 loans[1].setRepaidStatus(true);
 
 loans[3].setRepaidStatus(true);
-
 
 module.exports = {
   Loan,

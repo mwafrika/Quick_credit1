@@ -10,14 +10,14 @@ import { addPayment, getRepayments } from '../controller/loanRepayment_controlle
 
 const router = Router();
 
-router.post('/v1/auth/signin', login);
-router.post('/v1/auth/signup', signup);
+router.post('/v1/auth/signin', login); // finished
+router.post('/v1/auth/signup', signup); // finished
 router.patch('/v1/users/:userEmail/verify', verify);
 router.get('/v1/loans/user/:email', getUserLoan);
 router.post('/v1/loans/', addNewLoan);
-router.get('/v1/loans', getloans);
-router.get('/v1/loans/:loanID', getSpecificLoan);
-router.patch('/v1/loans/:loanID', approveLoan);
+router.get('/v1/loans', getloans); // finished
+router.get('/v1/loans/:loanID', getSpecificLoan);// finished
+router.patch('/v1/loans/:loanID', approveLoan); // not fully done
 router.post('/v1/loans/:loanID/repayment', addPayment);
 router.get('/v1/loans/:loanID/repayment', getRepayments);
 export default router;

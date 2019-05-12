@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/', router);
 app.get('/test', (req, res) => {
-  res.send('lemoisosn');
+  res.send('mwafrika');
 });
 
 const port = process.env.PORT || 15000;
