@@ -11,7 +11,7 @@ const app = express();
 // Parse incoming requests data
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, '/UI')));
+app.use(express.static(path.join(__dirname, '/UI/')));
 app.use('/', router);
 app.get('/test', (req, res) => {
   res.send('mwafrika');
