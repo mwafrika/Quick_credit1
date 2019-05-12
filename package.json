@@ -43,12 +43,12 @@
   },
   "scripts": {
     "test": " nyc --reporter=text mocha --require @babel/register  Server/test/*.js --timeout=3000",
-    "start": "nodemon --exec babel-node Server/config/index",
-    "server": "babel-node ./src/bin/www",
+    "start": "npm run build && node Server/config/index",
+    "server": "node ./src/bin/www",
     "server:prod": "node ./dist/bin/www",
     "dev": "NODE_ENV=development npm-run-all server",
-    "clean": "rimraf dist",
-    "build": "babel ./src --out-dir dist",
+    "clean": "rm -rf build && mkdir build",
+    "build": "npm run clean && npm run build-babel",
     "prod": "NODE_ENV=production npm-run-all clean build server:prod",
     "watch": "nodemon",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
