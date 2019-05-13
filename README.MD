@@ -1,6 +1,6 @@
 
 [![Build Status](https://travis-ci.org/mwafrika/Quick_credit1.png?branch=develop)](https://travis-ci.org/mwafrika/Quick_credit1)
-[![Coverage Status](https://coveralls.io/repos/github/mwafrika/Quick_credit1/badge.svg&service=github)](https://coveralls.io/github/mwafrika/Quick_credit1)
+[![Coverage Status](https://coveralls.io/repos/github/mwafrika/Quick_credit1/badge.svg)](https://coveralls.io/github/mwafrika/Quick_credit1)
 <!-- [![Coverage Status](https://coveralls.io/repos/github/user-repo/user-project/badge.png?branch=develop)](https://coveralls.io/github/user-repo/user-project?branch=master) -->
 #QUICK CREDIT
 ==============
