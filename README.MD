@@ -73,11 +73,11 @@ this project covers many  features, amongo them we have :
 
 github pages:
 ============
-https://mwafrika.github.io/Quick_credit1/UI
+https://mwafrika.github.io/Quick-Credit2/UI/
 
 github link :
 =============
-https://github.com/mwafrika/Quick_credit1
+https://github.com/mwafrika/Quick-Credit2
 
 pivotal tracker link:
 https://www.pivotaltracker.com/n/projects/2328100
