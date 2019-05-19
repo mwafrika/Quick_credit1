@@ -1,3 +1,7 @@
+
+[![Build Status](https://travis-ci.org/mwafrika/Quick_credit1.svg?branch=develop)](https://travis-ci.org/mwafrika/Quick_credit1)
+[![Coverage Status](https://coveralls.io/repos/github/mwafrika/Quick_credit1/badge.svg)](https://coveralls.io/github/mwafrika/Quick_credit1)
+
 #QUICK CREDIT
 ==============
 
@@ -77,11 +81,5 @@ https://github.com/mwafrika/Quick_credit1
 
 pivotal tracker link:
 https://www.pivotaltracker.com/n/projects/2328100
-
-travis CI
-===========
-[![Build Status](https://travis-ci.org/mwafrika/Quick_credit1.svg?branch=develop)](https://travis-ci.org/mwafrika/Quick_credit1)
-
-
 
 
