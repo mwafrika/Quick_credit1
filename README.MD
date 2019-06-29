@@ -1,6 +1,6 @@
 
 [![Build Status](https://travis-ci.org/mwafrika/Quick_credit1.png?branch=develop)](https://travis-ci.org/mwafrika/Quick_credit1)
-[![Coverage Status](https://coveralls.io/repos/github/mwafrika/Quick_credit1/badge.svg?branch=develop)](https://coveralls.io/github/mwafrika/Quick_credit1?branch=develop)
+[![Coverage Status](https://coveralls.io/repos/github/mwafrika/Quick_credit1/badge.png?branch=develop)](https://coveralls.io/github/mwafrika/Quick_credit1?branch=develop)
 
 #QUICK CREDIT
 ==============
@@ -27,7 +27,7 @@ he will need to provide :
 - the Address
 - the password 
 - reenter the passord to confirm.
-
+ 
 #Admin Dashboard
 ================
 
