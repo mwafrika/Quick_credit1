@@ -1,5 +1,5 @@
 
-[![Build Status](https://travis-ci.org/mwafrika/Quick_credit1.svg?branch=develop)](https://travis-ci.org/mwafrika/Quick_credit1)
+[![Build Status](https://travis-ci.org/mwafrika/Quick_credit1.png?branch=develop)](https://travis-ci.org/mwafrika/Quick_credit1)
 [![Coverage Status](https://coveralls.io/repos/github/mwafrika/Quick_credit1/badge.png?branch=develop)](https://coveralls.io/github/mwafrika/Quick_credit1?branch=develop)
 
 #QUICK CREDIT
