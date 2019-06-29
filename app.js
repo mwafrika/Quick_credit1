@@ -5,10 +5,6 @@
 import app1 from 'express';
 import body_parser from 'body-parser';
 
-// const app1 = express.Router();
-
-// app1.use(body_parser.json());
-
 app1.get('/', (res, req) => {
   req.send('mwafrika mufungizi josue');
 });
