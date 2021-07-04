@@ -1,6 +1,6 @@
 
-[![Build Status](https://travis-ci.org/mwafrika/Quick_credit1.svg?branch=develop)](https://travis-ci.org/mwafrika/Quick_credit1)
-[![Coverage Status](https://coveralls.io/repos/github/mwafrika/Quick_credit1/badge.svg)](https://coveralls.io/github/mwafrika/Quick_credit1)
+[![Build Status](https://travis-ci.org/mwafrika/Quick_credit1.png?branch=develop)](https://travis-ci.org/mwafrika/Quick_credit1)
+[![Coverage Status](https://coveralls.io/repos/github/mwafrika/Quick_credit1/badge.png?branch=develop)](https://coveralls.io/github/mwafrika/Quick_credit1?branch=develop)
 
 #QUICK CREDIT
 ==============
@@ -27,7 +27,7 @@ he will need to provide :
 - the Address
 - the password 
 - reenter the passord to confirm.
-
+ 
 #Admin Dashboard
 ================
 
@@ -73,11 +73,11 @@ this project covers many  features, amongo them we have :
 
 github pages:
 ============
-https://mwafrika.github.io/Quick_credit1/UI
+https://mwafrika.github.io/Quick-Credit2/UI/
 
 github link :
 =============
-https://github.com/mwafrika/Quick_credit1
+https://github.com/mwafrika/Quick-Credit2
 
 pivotal tracker link:
 https://www.pivotaltracker.com/n/projects/2328100
